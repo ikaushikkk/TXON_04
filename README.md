@@ -1,1 +1,1 @@
-# TXON_04
+This is my developer portfolio which has been given as a task by TXON in my internship as a web developer intern. I have added my email and phone number and also my educational details in my portfolio and also added my past experiences of internships.
