@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>personal portfolio website Create</title>
+</head>
+<body>
+     <!-----start Hearder section----->
+     <div id="hearder">
+        <div class="contenier">
+            <nav >
+                
+                <ul id="sidmenu">
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav> 
+              <div class="hearder-text">
+                <h2>Aspiring Web Developer</h2>
+                <h1>Hi I am Ans Kaushik From Greater Noida</h1>
+              </div>       
+            </div>
+        </div>
+     </div>
+      <!-----End Hearder section----->
+
+
+      <!-----start About section----->
+      <div id="about">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                  
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me:</h1>
+                    <p> To work with an organization with best individual as well as group efforts, in achieving goals and have continuous self-development through learning and exposure. </p>
+                   <div class="tab-titles">
+                    <h3 class="tab-links active-link " onclick="opentab('skills')">Skills</h3>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming language: C++,Java, Python, PHP, SQL, React
+                        Html,CSS & Javascript</li>
+                        </ul>
+                
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech(Information Technology) N.I.E.T Greater Noida</li>
+                        <li><span>Pursuing Pre Final Year </li>
+                        <li><span>Duration 2020-2024</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-----End About section----->
+
+
+        <!----portfolio section Start ----->
+
+        <div id="portfolio">
+            <div class="contenier">
+                <h1 class="sub-title">Experiences: </h1>
+                <p>I had done two internships in my previous semsters.</p>
+                <div class="work-list">
+                    <div class="work">
+                        <div class="layer">
+                            <h3>Java Development</h3>
+                            <p>Learnt some basic java skills such as the pillars of OOP's and other basic things.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work">
+                        <div class="layer">
+                            <h3>Web Developer</h3>
+                            <p>I had learnt some basic web developement languages such as html, css and javascript. Also worked on php and react.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                
+                  
+                </div>
+                <a href="#" class="btn">Learn More</a>
+
+            </div>
+        </div>
+         <!----portfolio section End ----->
+
+
+          <!----Contact section Start ----->
+          <div id="contact">
+            <div class="contenier">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Us</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>ashkaushik0007@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>+91123456789</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                     
+
+                    </div>
+                    <div class="contact-right">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="massage" rows="1" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+   
+          <!----Contact section End ----->
+  
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu(){
+            sidmenu.style.right ="0";
+        }
+        function closemenu(){
+            sidmenu.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
